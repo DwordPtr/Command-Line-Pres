@@ -24,11 +24,14 @@ There's a standard called POSIX shared by Mac and Linux that dictates alot of st
 --newpage Mutable State
 --heading Env info
 --beginoutput
-printenv
+PATH=$PATH:/path/to/bin
 --endoutput
 --center The shell like any other programming language has env variables and a path.
 
 
-The main difference is your path will have scripts and applications on it instead of classes.
+The main difference is your shell's path will have scripts and applications on it instead of classes.
+The path is just a variable with a semicolon seperated list of folders where you non-recursively search for binaries to run.
 The majority of package managers simply put binaries on a path only root can edit which is why
-they have to be run in root.
+they have to be run in root. This is why the folders where binaries go tend to have so many entries.
+
+Many of these configs are likely found in your .bashrc/.zshrc file.
