@@ -25,6 +25,7 @@ There's a standard called POSIX shared by Mac and Linux that dictates alot of st
 --heading Env info
 --beginoutput
 PATH=$PATH:/path/to/bin
+export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 --endoutput
 --center The shell like any other programming language has env variables and a path.
 
@@ -35,3 +36,15 @@ The majority of package managers simply put binaries on a path only root can edi
 they have to be run in root. This is why the folders where binaries go tend to have so many entries.
 
 Many of these configs are likely found in your .bashrc/.zshrc file.
+There's less difference between env vars and local vars than in other languages but there is one, remember the 'export' keyword
+
+--newpage solution
+--heading $Shell great for high entropy situtaions!
+--beginoutput
+ip=`ip addr list eno1 | grep "inet" | top | awk '{print $2}' | xargs dirname`
+--endoutput
+Just like graphical programming languages are still not a thing,
+because textual languages are better at providing alot of info relative to space.
+
+The shell is great for providing a lot of info in short space.
+The shell is bad for situtations with alot of logic and readability
