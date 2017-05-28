@@ -2,11 +2,21 @@
 --title cat /etc/shellBasics
 --center An Intro to be productive with the commandline
 
---newpage outline
+--newpage "In the beggining there was a the command line" <- Neal Stephenson
+--beginoutput
+show me: https://www.youtube.com/watch?v=JoVQTPbD6UY
+suggest me: https://www.youtube.com/watch?v=tc4ROCJYbm0
+--endoutput
+--heading Things that don't go away in computer science over a career
+1. Need for social skills
+2. Discrete math
+3. Unix shell usage.
+
+
 
 --heading What you'll get out of this
 1. An idea of the kinds of problems the shell can solve.
-2. An basic understanding of how to (productively) use the shell.
+2. An basic understanding of how to (productively) use the shell (I hope).
 3. Some examples of command line fu for motivation.
 
 --newpage whatisShell
@@ -15,6 +25,7 @@
 echo $SHELL
 --endoutput
 The shell or command-line is a language with a REPL (read-eval-print loop) and enviornmental knowledge about your system.
+It's very often used as a kind a glue language.
 There's a standard called POSIX shared by Mac and Linux that dictates alot of standards. Windows emulates this using virtual IO with Cygwin.
 
 
@@ -47,4 +58,12 @@ Just like graphical programming languages are still not a thing,
 because textual languages are better at providing alot of info relative to space.
 
 The shell is great for providing a lot of info in short space.
-The shell is bad for situtations with alot of logic and readability
+The shell is also great for composability.
+The shell is bad for situtations with alot of logic that needs to be readable.
+
+--newpage tmux & etc
+--heading Multiplexing 
+--beginoutput
+tmux attach -t $SESSION_NAME
+--endoutput
+These are basically window managers for the shell you should use them.
