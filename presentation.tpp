@@ -7,6 +7,8 @@
 show me: https://www.youtube.com/watch?v=JoVQTPbD6UY
 suggest me: https://www.youtube.com/watch?v=tc4ROCJYbm0
 --endoutput
+
+
 --heading Things that don't go away in computer science over a career
 1. Need for social skills
 2. Discrete math
@@ -15,8 +17,9 @@ suggest me: https://www.youtube.com/watch?v=tc4ROCJYbm0
 
 
 --heading What you'll get out of this
+
 1. An idea of the kinds of problems the shell can solve.
-2. An basic understanding of how to (productively) use the shell (I hope).
+2. An basic understanding of the shell landscape how to (productively) use the shell (I hope).
 3. Some examples of command line fu for motivation.
 
 --newpage whatisShell
@@ -45,8 +48,9 @@ The main difference is your shell's path will have scripts and applications on i
 The path is just a variable with a semicolon seperated list of folders where you non-recursively search for binaries to run.
 The majority of package managers simply put binaries on a path only root can edit which is why
 they have to be run in root. This is why the folders where binaries go tend to have so many entries.
+(There's some exciting work done with breaking the linux filesystem standard, but it's way outside scope.)
 
-Many of these configs are likely found in your .bashrc/.zshrc file.
+Many of these configs are likely found in your .bashrc/.zshrc file. (show .zshrc & variable setup)
 There's less difference between env vars and local vars than in other languages but there is one, remember the 'export' keyword
 
 --newpage solution
@@ -62,8 +66,28 @@ The shell is also great for composability.
 The shell is bad for situtations with alot of logic that needs to be readable.
 
 --newpage tmux & etc
---heading Multiplexing 
+--heading Multiplexing (tmux)
 --beginoutput
+https://robots.thoughtbot.com/a-tmux-crash-course
+https://github.com/gpakosz/.tmux
 tmux attach -t $SESSION_NAME
 --endoutput
 These are basically window managers for the shell you should use them.
+Terminal sessions are broken into tabs, panes and windows.
+These are useful for debugging.
+
+Tmux also has modes that make copy/paste from terminal more nicely vi-copy. (demo vi-copy)
+Its cross platform and there are many nice things for it like .tmux (mac/linux preffered).
+
+--newpage Ssh
+--heading Ssh (Highest Roi)
+--beginoutput
+ssh -X $USER@$HOST
+--endoutput
+Ssh stats for Secured Shell. Its an encrypted protocol for performing remote shell sessions.
+Since Famc prod and test infra is ubuntu ssh can help you:
+1. find db url for debugging lab from jtds-ds.xml
+2. tail/pull logs to find offending exception.
+
+You can also tunnel traffic through other machines if you need you public ip to be different. (Salesforce)
+
