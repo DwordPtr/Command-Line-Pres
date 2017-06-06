@@ -87,6 +87,7 @@ https://www.digitalocean.com/community/tutorials/how-to-use-bash-history-command
 https://spin.atomicobject.com/2016/05/28/log-bash-history/
 --endoutput
 Bash, Zsh and other POSIX shells keep track of history.
+You can find the last nth command by hitting the up arrow.
 You can search a prevously ran command with 'ctrl+r'
 There are ways to log the entire shell history or your machine to files.
 This is a great idea for remembering commands and looking at what you did in the past.
