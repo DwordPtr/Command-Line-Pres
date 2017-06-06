@@ -20,7 +20,8 @@ suggest me: https://www.youtube.com/watch?v=tc4ROCJYbm0
 
 1. An idea of the kinds of problems the shell can solve.
 2. An basic understanding of the shell landscape how to (productively) use the shell (I hope).
-3. Some examples of command line fu for motivation.
+3. Some basic (intermediate?) shell commands. 
+4. Some examples of command line fu for motivation.
 
 --newpage whatisShell
 --heading What is a shell
@@ -78,6 +79,17 @@ These are useful for debugging.
 
 Tmux also has modes that make copy/paste from terminal more nicely vi-copy. (demo vi-copy)
 Its cross platform and there are many nice things for it like .tmux (mac/linux preffered).
+
+--newpage History
+--heading History
+--beginoutput
+https://www.digitalocean.com/community/tutorials/how-to-use-bash-history-commands-and-expansions-on-a-linux-vps
+https://spin.atomicobject.com/2016/05/28/log-bash-history/
+--endoutput
+Bash, Zsh and other POSIX shells keep track of history.
+You can search a prevously ran command with 'ctrl+r'
+There are ways to log the entire shell history or your machine to files.
+This is a great idea for remembering commands and looking at what you did in the past.
 
 --newpage Ssh
 --heading Ssh (Highest Roi)
