@@ -23,6 +23,11 @@ suggest me: https://www.youtube.com/watch?v=tc4ROCJYbm0
 3. Some basic (intermediate?) shell commands. 
 4. Some examples of command line fu for motivation.
 
+
+--beginoutput
+Btw: I'm assuming you can cd,ls and pipe
+--endoutput
+
 --newpage whatisShell
 --heading What is a shell
 --beginoutput
@@ -81,10 +86,18 @@ Tmux also has modes that make copy/paste from terminal more nicely vi-copy. (dem
 Its cross platform and there are many nice things for it like .tmux (mac/linux preffered).
 
 --newpage Basic commands
---heading Basic commands
-1. ls 
-2. cd
-3. 
+--heading Basic(ish) commands
+
+1. ps - show active process `ps -axeo pid,cmd,lstart,cgroup`
+
+2. awk - full on programming langauge, I just it to grab text w/ pip ps -ax | awk '{print $1}'
+
+3. xargs convert stdout to command line args useful because commands use one or the other and pipes work over stdout
+   sudo ps -ax | grep jboss | awk '{print $1}' | xargs kill -9
+   (things like cygwin can only see processes they own, on unix boxes you will be limited w/o root)
+
+4. notify-send (linux only) program for making desktop notifications
+   mvn clean install && notify-send 'build passed' || notify-send 'build failed'
 --newpage History
 --heading History
 --beginoutput
@@ -98,7 +111,7 @@ There are ways to log the entire shell history or your machine to files.
 This is a great idea for remembering commands and looking at what you did in the past.
 
 --newpage Ssh
---heading Ssh (Highest Roi)
+--heading Ssh (Highest Roi after basic commands)
 --beginoutput
 ssh -X $USER@$HOST
 --endoutput
