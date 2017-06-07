@@ -1,6 +1,5 @@
---author Bryan Tidwell
---title cat /etc/shellBasics
---center An Intro to be productive with the commandline
+--title echo "(Advanced) Shell Basics"
+--author Bryan Tidwell <Dev II hopeful and discount ops guy>
 
 --newpage "In the beggining there was a the command line" <- Neal Stephenson
 --beginoutput
@@ -70,6 +69,19 @@ because textual languages are better at providing alot of info relative to space
 The shell is great for providing a lot of info in short space.
 The shell is also great for composability.
 The shell is bad for situtations with alot of logic that needs to be readable.
+
+--newpage oh-my-zsh
+--heading oh-my-zsh
+--beginoutput
+https://github.com/robbyrussell/oh-my-zsh
+--endoutput
+
+Oh my zsh is a framework for the zsh shell started by Robby Russel.
+it adds a ton of plugins to the shell by defalt and is worth checking out. (Mac/Linux)
+The git plugin is especially nice since it shows your current git branch in the prompt.
+
+There are many tools like this on the internet but oh-my-zsh has a truly huge community.
+Warning it can get slow if you add a ton of stuff.
 
 --newpage tmux & etc
 --heading Multiplexing (tmux)
