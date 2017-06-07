@@ -80,6 +80,11 @@ These are useful for debugging.
 Tmux also has modes that make copy/paste from terminal more nicely vi-copy. (demo vi-copy)
 Its cross platform and there are many nice things for it like .tmux (mac/linux preffered).
 
+--newpage Basic commands
+--heading Basic commands
+1. ls 
+2. cd
+3. 
 --newpage History
 --heading History
 --beginoutput
