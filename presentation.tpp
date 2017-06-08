@@ -146,3 +146,16 @@ Since Famc prod and test infra is ubuntu ssh can help you:
 
 You can also tunnel traffic through other machines if you need you public ip to be different. (Salesforce)
 
+--newpage Easter Eggs
+--heading Easter Eggs
+--beginoutput
+https://github.com/stark/Color-Scripts
+alias weather='curl wttr.in/37067'
+https://github.com/LazoCoder/Pokemon-Terminal
+--endoutput
+
+--center These are some things that probably won't help move work but are cool :P
+
+Thanks and go do something cool with a POSIX shell!
+
+
