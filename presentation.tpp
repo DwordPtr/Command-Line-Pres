@@ -33,7 +33,9 @@ Btw: I'm assuming you can cd,ls and pipe
 echo $SHELL
 --endoutput
 The shell or command-line is a language with a REPL (read-eval-print loop) and enviornmental knowledge about your system.
+
 It's very often used as a kind a glue language.
+
 There's a standard called POSIX shared by Mac and Linux that dictates alot of standards. Windows emulates this using virtual IO with Cygwin.
 
 
@@ -129,9 +131,13 @@ https://www.digitalocean.com/community/tutorials/how-to-use-bash-history-command
 https://spin.atomicobject.com/2016/05/28/log-bash-history/
 --endoutput
 Bash, Zsh and other POSIX shells keep track of history.
+
 You can find the last nth command by hitting the up arrow.
+
 You can search a prevously ran command with 'ctrl+r'
+
 There are ways to log the entire shell history or your machine to files.
+
 This is a great idea for remembering commands and looking at what you did in the past.
 
 --newpage Ssh
@@ -141,6 +147,8 @@ ssh -X $USER@$HOST
 --endoutput
 Ssh stats for Secured Shell. Its an encrypted protocol for performing remote shell sessions.
 Since Famc prod and test infra is ubuntu ssh can help you:
+
+
 1. find db url for debugging lab from jtds-ds.xml
 2. tail/pull logs to find offending exception.
 
