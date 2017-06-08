@@ -83,6 +83,18 @@ The git plugin is especially nice since it shows your current git branch in the 
 There are many tools like this on the internet but oh-my-zsh has a truly huge community.
 Warning it can get slow if you add a ton of stuff.
 
+--newpage Bash on windows
+--heading Bash on windows 
+--beginoutput
+https://msdn.microsoft.com/en-us/commandline/wsl/about
+https://msdn.microsoft.com/en-us/commandline/wsl/install_guide 
+https://techcrunch.com/2017/05/11/microsofts-bash-on-windows-10-goes-beyond-ubuntu-and-gets-support-for-fedora-and-suse-too/
+--endoutput
+
+Microsoft has a feature in windows 10 for runing ubuntu userspace.
+You can even use apt. 
+
+They're planning to support opensuse and fedora soon.
 --newpage tmux & etc
 --heading Multiplexing (tmux)
 --beginoutput
