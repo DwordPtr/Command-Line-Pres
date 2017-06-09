@@ -34,7 +34,7 @@ Btw: I'm assuming you can cd,ls and pipe
 --beginoutput
 echo $SHELL
 --endoutput
-The shell or command-line is a language with a REPL (read-eval-print loop) and enviornmental knowledge about your system.
+The shell or command-line is an interface to a language with a REPL (read-eval-print loop) that has enviornmental knowledge about your system.
 
 It's very often used as a kind a glue language.
 
@@ -68,9 +68,10 @@ There's less difference between env vars and local vars than in other languages 
 ip=`ip addr list eno1 | grep "inet" | top | awk '{print $2}' | xargs dirname`
 --endoutput
 Just like graphical programming languages are still not a thing,
-because textual languages are better at providing alot of info relative to space.
+because textual languages are better at providing alot of info relative to space,
+the shell is still best for some kinds of problems.
 
-The shell is great for providing a lot of info in short space.
+The shell is great for providing a lot of info in a short space.
 The shell is also great for composability.
 The shell is bad for situtations with alot of logic that needs to be readable.
 
@@ -80,7 +81,7 @@ The shell is bad for situtations with alot of logic that needs to be readable.
 https://github.com/robbyrussell/oh-my-zsh
 --endoutput
 
-Oh my zsh is a framework for the zsh shell started by Robby Russel.
+Oh my zsh is a framework for the zsh shell started by Robby Russell.
 it adds a ton of plugins to the shell by defalt and is worth checking out. (Mac/Linux)
 The git plugin is especially nice since it shows your current git branch in the prompt.
 
@@ -95,8 +96,8 @@ https://msdn.microsoft.com/en-us/commandline/wsl/install_guide
 https://techcrunch.com/2017/05/11/microsofts-bash-on-windows-10-goes-beyond-ubuntu-and-gets-support-for-fedora-and-suse-too/
 --endoutput
 
-Microsoft has a feature in windows 10 for runing ubuntu userspace.
-You can even use apt. 
+Microsoft has a feature in windows 10 for runing ubuntu (command line)  userspace.
+You can even use apt to get packages from the repos. 
 
 They're planning to support opensuse and fedora soon.
 --newpage tmux & etc
