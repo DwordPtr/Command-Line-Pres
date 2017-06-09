@@ -130,6 +130,14 @@ I just learned this morning that you can actually share a session for pair progr
 
 4. notify-send (linux only) program for making desktop notifications
    mvn clean install && notify-send 'build passed' || notify-send 'build failed'
+
+5. grep - global regular expression print - grep 'pattern' file.ext find . -name '*.java' | grep 'setField' 
+
+6. man - find manual page for a command
+--beginoutput
+www.linuxjournal.com/article/1149
+https://www.amazon.com/Practical-Guide-Commands-Editors-Programming/dp/013308504X
+--endoutput
 --newpage History
 --heading History
 --beginoutput
@@ -150,6 +158,8 @@ This is a great idea for remembering commands and looking at what you did in the
 --heading Ssh (Highest Roi after basic commands)
 --beginoutput
 ssh -X $USER@$HOST
+ssh -t $USER@$HOST tail -f /var/log/logfile.log
+scp $USER#@$HOST:/path/to/remove/file localFileName
 --endoutput
 Ssh stats for Secured Shell. Its an encrypted protocol for performing remote shell sessions.
 Since Famc prod and test infra is ubuntu ssh can help you:
