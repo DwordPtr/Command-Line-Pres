@@ -1,6 +1,8 @@
 --title echo "(Advanced) Shell Basics"
 --author Bryan Tidwell <Dev II hopeful and discount ops guy>
 
+https://github.com/DwordPtr/Command-Line-Pres
+
 --newpage "In the beggining there was a the command line" <- Neal Stephenson
 --beginoutput
 show me: https://www.youtube.com/watch?v=JoVQTPbD6UY
@@ -102,6 +104,7 @@ They're planning to support opensuse and fedora soon.
 --beginoutput
 https://robots.thoughtbot.com/a-tmux-crash-course
 https://github.com/gpakosz/.tmux
+http://hamvocke.com/blog/remote-pair-programming-with-tmux/
 tmux attach -t $SESSION_NAME
 --endoutput
 These are basically window managers for the shell you should use them.
@@ -110,6 +113,8 @@ These are useful for debugging.
 
 Tmux also has modes that make copy/paste from terminal more nicely vi-copy. (demo vi-copy)
 Its cross platform and there are many nice things for it like .tmux (mac/linux preffered).
+
+I just learned this morning that you can actually share a session for pair programming remotely!
 
 --newpage Basic commands
 --heading Basic(ish) commands
